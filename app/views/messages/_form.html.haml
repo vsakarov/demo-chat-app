@@ -1,0 +1,8 @@
+= simple_form_for([@room, @message], :defaults => { :input_html => { :class => 'input-xxlarge' } }, remote: true) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :text
+
+  .form-actions
+    = f.button :submit, :class => "btn-primary"

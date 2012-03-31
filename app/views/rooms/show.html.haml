@@ -1,0 +1,14 @@
+.page-header
+  = link_to rooms_path, :class => 'btn' do
+    %i.icon-list-alt
+    Back
+  = link_to edit_room_path(@room), :class => 'btn btn-primary' do
+    %i.icon-pencil.icon-white
+    Edit
+  %h1 Listing rooms
+
+%dl
+  %dt Name:
+  %dd= @room.name
+  %dt Chatter:
+  %dd= @room.chatter_id
